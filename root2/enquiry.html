@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blossom and Rosebud Bakery - Enquiry</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Blossom and Rosebud Bakery</h1>
+        <p>Freshly Baked With Love</p>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="products.html">Products</a> |
+            <a href="enquiry.html">Enquiry</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>Make an Enquiry</h2>
+
+        <p>
+            Please complete the form below if you would like
+            more information about our products or would like
+            to enquire about a custom order.
+        </p>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Customer Information</legend>
+
+                <p>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name">
+                </p>
+
+                <p>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+
+                <p>
+                    <label for="phone">Telephone Number:</label><br>
+                    <input type="tel" id="phone" name="phone">
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Order Information</legend>
+
+                <p>
+                    <label for="order">Type of Enquiry:</label><br>
+
+                    <select id="order" name="order">
+
+                        <option value="cake">Celebration Cake</option>
+                        <option value="cupcakes">Cupcakes</option>
+                        <option value="pastries">Pastries</option>
+                        <option value="catering">Catering</option>
+                        <option value="other">Other</option>
+
+                    </select>
+                </p>
+
+                <p>
+                    <label for="date">Preferred Date:</label><br>
+                    <input type="date" id="date" name="date">
+                </p>
+
+                <p>
+                    <label for="quantity">Quantity:</label><br>
+                    <input type="number" id="quantity" name="quantity">
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"
+                    rows="6" cols="40"></textarea>
+                </p>
+
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Submit Enquiry">
+                <input type="reset" value="Clear Form">
+            </p>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Blossom and Rosebud Bakery</p>
+    </footer>
+
+</body>
+</html>
