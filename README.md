@@ -1,20 +1,7 @@
-## README — Blossom and Rosebud Bakery (HTML-only Website)
+## README — Blossom and Rosebud Bakery 
 
 ### Overview
-This project contains a simple **HTML-only** website for **Blossom and Rosebud Bakery**. It demonstrates basic website structure, **multi-page navigation**, and **HTML forms** (no CSS or JavaScript).
-
-### Folder Structure
-Create the following folder and files:
-
-```text
-Blossom-and-Rosebud/
-│
-├── index.html
-├── about.html
-├── products.html
-├── enquiry.html
-└── contact.html
-```
+This project contains a simple **HTML-only** website for **Blossom and Rosebud Bakery**. It demonstrates basic website structure, **multi-page navigation**, and **HTML forms**
 
 ### Pages Included
 1. **index.html** — Home  
@@ -50,22 +37,7 @@ Includes fields such as:
 
 > Note: Since this is an **HTML-only** project, the forms are not connected to a backend and do not submit to a server (they are for demonstration).
 
-### How to Run / View the Website
-1. Save all files in the same folder: `Blossom-and-Rosebud/`
-2. Open **`index.html`** in your web browser.
-3. Use the navigation links to visit the other pages.
-
 ### Technologies Used
 - **HTML only**
-- No CSS
-- No JavaScript
 
-### Notes for Assessment (Important)
-- If Blossom and Rosebud is a **proposed business**, ensure any contact details shown are clearly labelled as **example/proposed** (not real claims).
-- The website uses semantic HTML structure such as:
-  - `header`, `nav`, `main`, `section`, `footer`
-  - `form`, `fieldset`, `legend`, `label`, `input`, `select`, `textarea`
 
----
-
-If you tell me your course name/code (e.g., WEDE5020) and your student name/class number, I can customize the README header with those details too.
