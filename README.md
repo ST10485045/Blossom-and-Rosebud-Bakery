@@ -41,8 +41,8 @@ Includes fields such as:
 - **HTML only**
 
 ### Changelog (Part 2)
-- **v0.6**: Created `css/style.css` and linked to all HTML pages. Added CSS reset and base styles.
-- **v0.7**: Implemented typography hierarchy (H1-H3, paragraphs) using Blossom & Rosebud's brand colors.
-- **v0.8**: Implemented Flexbox for navigation and forms, and CSS Grid for product/feature sections.
-- **v0.9**: Added visual styles (box-shadows, borders, hover/focus/active pseudo-classes).
-- **v1.0**: Implemented responsive design using media queries (768px and 480px breakpoints), relative units (`rem`, `%`), and responsive image techniques (`srcset`).
+- 6: Created `css/style.css` and linked to all HTML pages. Added CSS reset and base styles.
+- 7: Implemented typography hierarchy (H1-H3, paragraphs) using Blossom & Rosebud's brand colors.
+- 8: Implemented Flexbox for navigation and forms, and CSS Grid for product/feature sections.
+- 9: Added visual styles (box-shadows, borders, hover/focus/active pseudo-classes).
+- 10: Implemented responsive design using media queries (768px and 480px breakpoints), relative units (`rem`, `%`), and responsive image techniques (`srcset`).
