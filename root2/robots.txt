@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chimerical-kelpie-6c2468.netlify.app/
