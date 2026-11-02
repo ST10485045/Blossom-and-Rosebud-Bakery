@@ -1,108 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blossom and Rosebud Bakery - Enquiry</title>
+    <title>Enquiry | Blossom and Rosebud Bakery</title>
+    <meta name="description" content="Enquire about our bakery products, pricing, and availability. Let us make your next celebration sweet.">
+    <meta name="keywords" content="bakery enquiry, order cake, bakery prices Johannesburg">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Blossom and Rosebud Bakery</h1>
-        <p>Freshly Baked With Love</p>
-
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="products.html">Products</a> |
-            <a href="enquiry.html">Enquiry</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
+    <!-- Header & Nav go here -->
     <main>
+        <h1>Make an Enquiry</h1>
+        <form id="enquiryForm" novalidate>
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName">
+                <span class="error-msg" id="nameError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email">
+                <span class="error-msg" id="emailError"></span>
+            </div>
 
-        <h2>Make an Enquiry</h2>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+                <span class="error-msg" id="phoneError"></span>
+            </div>
 
-        <p>
-            Please complete the form below if you would like
-            more information about our products or would like
-            to enquire about a custom order.
-        </p>
+            <div class="form-group">
+                <label for="enquiryType">Type of Enquiry:</label>
+                <select id="enquiryType" name="enquiryType">
+                    <option value="">Please select...</option>
+                    <option value="order">Product Order</option>
+                    <option value="volunteer">Volunteer/Sponsor</option>
+                </select>
+                <span class="error-msg" id="typeError"></span>
+            </div>
 
-        <form>
-
-            <fieldset>
-
-                <legend>Customer Information</legend>
-
-                <p>
-                    <label for="name">Full Name:</label><br>
-                    <input type="text" id="name" name="name">
-                </p>
-
-                <p>
-                    <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="email">
-                </p>
-
-                <p>
-                    <label for="phone">Telephone Number:</label><br>
-                    <input type="tel" id="phone" name="phone">
-                </p>
-
-            </fieldset>
-
-            <fieldset>
-
-                <legend>Order Information</legend>
-
-                <p>
-                    <label for="order">Type of Enquiry:</label><br>
-
-                    <select id="order" name="order">
-
-                        <option value="cake">Celebration Cake</option>
-                        <option value="cupcakes">Cupcakes</option>
-                        <option value="pastries">Pastries</option>
-                        <option value="catering">Catering</option>
-                        <option value="other">Other</option>
-
-                    </select>
-                </p>
-
-                <p>
-                    <label for="date">Preferred Date:</label><br>
-                    <input type="date" id="date" name="date">
-                </p>
-
-                <p>
-                    <label for="quantity">Quantity:</label><br>
-                    <input type="number" id="quantity" name="quantity">
-                </p>
-
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message"
-                    rows="6" cols="40"></textarea>
-                </p>
-
-            </fieldset>
-
-            <p>
-                <input type="submit" value="Submit Enquiry">
-                <input type="reset" value="Clear Form">
-            </p>
-
+            <button type="submit">Send Enquiry</button>
+            <div id="formResponse" class="success-msg"></div>
         </form>
-
     </main>
-
-    <footer>
-        <p>&copy; 2026 Blossom and Rosebud Bakery</p>
-    </footer>
-
+    <script src="js/validation.js"></script>
 </body>
 </html>
