@@ -163,3 +163,90 @@ input:focus, select:focus, textarea:focus {
     h1 { font-size: 1.75rem; }
     h2 { font-size: 1.5rem; }
 }
+
+/* --- Form Validation Styling --- */
+.error-msg {
+    color: #d9534f;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: block;
+}
+
+.success-msg {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #e9f7ec;
+    border-radius: 5px;
+}
+
+/* --- Search & Dynamic Grid Styling --- */
+.search-container {
+    margin: 20px 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer; /* Shows user they can click for lightbox */
+}
+
+/* --- Lightbox Modal Styling --- */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    animation: zoomIn 0.3s;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Lightbox Animation */
+@keyframes zoomIn {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
