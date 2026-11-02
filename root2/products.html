@@ -1,101 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blossom and Rosebud Bakery - Products</title>
+    <!-- SEO Meta Tags -->
+    <title>Our Products | Fresh Cakes & Pastries | Blossom and Rosebud</title>
+    <meta name="description" content="Explore our wide range of freshly baked cakes, cupcakes, cookies, and bread. Order online or enquire today at Blossom and Rosebud Bakery.">
+    <meta name="keywords" content="bakery, cakes, cupcakes, pastries, bread, Johannesburg bakery, fresh baked goods">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <header>
-        <h1>Blossom and Rosebud Bakery</h1>
-        <p>Freshly Baked With Love</p>
-
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="products.html">Products</a> |
-            <a href="enquiry.html">Enquiry</a> |
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
+    <!-- Header & Nav go here -->
     <main>
+        <h1>Our Products</h1>
+        
+        <!-- Search Feature -->
+        <div class="search-container">
+            <label for="productSearch">Search for a product:</label>
+            <input type="text" id="productSearch" placeholder="e.g. Cupcakes">
+        </div>
 
-        <h2>Our Products</h2>
-
-        <section>
-            <h3>Celebration Cakes</h3>
-
-            <p>
-                Our celebration cakes can be prepared for
-                birthdays, anniversaries and other special occasions.
-            </p>
-
-            <ul>
-                <li>Chocolate Cake</li>
-                <li>Vanilla Cake</li>
-                <li>Red Velvet Cake</li>
-                <li>Carrot Cake</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Cupcakes</h3>
-
-            <p>
-                Our cupcakes are suitable for parties,
-                celebrations and everyday treats.
-            </p>
-
-            <ul>
-                <li>Vanilla Cupcakes</li>
-                <li>Chocolate Cupcakes</li>
-                <li>Red Velvet Cupcakes</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Pastries</h3>
-
-            <ul>
-                <li>Croissants</li>
-                <li>Fruit Pastries</li>
-                <li>Cinnamon Rolls</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Cookies</h3>
-
-            <ul>
-                <li>Chocolate Chip Cookies</li>
-                <li>Shortbread Cookies</li>
-                <li>Oatmeal Cookies</li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Fresh Bread</h3>
-
-            <ul>
-                <li>White Bread</li>
-                <li>Brown Bread</li>
-                <li>Whole Wheat Bread</li>
-            </ul>
-        </section>
-
-        <p>
-            <a href="enquiry.html">Enquire About an Order</a>
-        </p>
-
+        <!-- Dynamic Content Container -->
+        <div id="product-grid" class="product-grid">
+            <!-- Products will be loaded here by JavaScript -->
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Blossom and Rosebud Bakery</p>
-    </footer>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged product view">
+    </div>
 
+    <script src="js/products.js"></script>
+    <script src="js/lightbox.js"></script>
 </body>
 </html>
